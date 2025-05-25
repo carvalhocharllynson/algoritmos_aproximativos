@@ -1,7 +1,7 @@
-import time
+from time import perf_counter
 
 def vizinho_mais_proximo(matriz):
-    inicio = time.time()
+    inicio = perf_counter()
     n = len(matriz)
     visitado = [False] * n
     rota = [0]
@@ -23,5 +23,5 @@ def vizinho_mais_proximo(matriz):
 
     custo_total += matriz[atual][0]
     rota.append(0)
-    fim = time.time()
+    fim = perf_counter()
     return rota, custo_total, fim - inicio

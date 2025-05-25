@@ -1,8 +1,8 @@
-import time
+from time import perf_counter
 from itertools import combinations
 
 def held_karp(matriz):
-    inicio = time.time()
+    inicio = perf_counter()
     n = len(matriz)
     memo = {}
 
@@ -37,5 +37,5 @@ def held_karp(matriz):
             melhor_custo = custo
             melhor_rota = caminho + [0]
 
-    fim = time.time()
+    fim = perf_counter()
     return melhor_rota, melhor_custo, fim - inicio
