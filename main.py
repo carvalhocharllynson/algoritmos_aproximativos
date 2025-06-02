@@ -1,14 +1,14 @@
 import os
 
 from leitor import ler_matriz_arquivo
-from aproximado import vizinho_mais_proximo
+from aproximado import tsp_aproximado
 from exato import held_karp
 
-caminho_arquivo = "arquivos/tsp4_7013.txt"
+caminho_arquivo = "arquivos/tsp2_1248.txt"
 matriz = ler_matriz_arquivo(caminho_arquivo)
 
-rota_aprox, custo_aprox, tempo_aprox = vizinho_mais_proximo(matriz)
-print("\n--- Algoritmo Aproximado (Vizinho Mais Próximo) ---")
+rota_aprox, custo_aprox, tempo_aprox = tsp_aproximado(matriz)
+print("\n--- Algoritmo Aproximado (PRIM + DFS) ---")
 print(f"Arquivo: {os.path.basename(caminho_arquivo)}")
 print(f"Rota: {rota_aprox}")
 print(f"Custo total: {custo_aprox}")
