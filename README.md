@@ -1,4 +1,4 @@
-Para executar as soluções e replicar os resultados, siga os passos abaixo.
+Para executar as soluções e replicar os resultados, siga os passos abaixo:
 
 ### Estrutura dos Arquivos
 O projeto está organizado com os seguintes arquivos:
