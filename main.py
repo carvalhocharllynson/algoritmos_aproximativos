@@ -4,7 +4,7 @@ from leitor import ler_matriz_arquivo
 from aproximado import tsp_aproximado
 from exato import held_karp
 
-caminho_arquivo = "arquivos/tsp2_1248.txt"
+caminho_arquivo = "arquivos/tsp5_27603.txt"
 matriz = ler_matriz_arquivo(caminho_arquivo)
 
 rota_aprox, custo_aprox, tempo_aprox = tsp_aproximado(matriz)
